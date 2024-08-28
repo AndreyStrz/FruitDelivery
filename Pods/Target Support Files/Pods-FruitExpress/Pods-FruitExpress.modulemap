@@ -1,0 +1,6 @@
+framework module Pods_FruitExpress {
+  umbrella header "Pods-FruitExpress-umbrella.h"
+
+  export *
+  module * { export * }
+}

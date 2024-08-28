@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "maryna2_nectarine_bright_color_white_background_d7a5ddcd-0081-4754-9824-21a04c28ccf3.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "maryna2_nectarine_bright_color_white_background_d7a5ddcd-0081-4754-9824-21a04c28ccf3@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "maryna2_nectarine_bright_color_white_background_d7a5ddcd-0081-4754-9824-21a04c28ccf3@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

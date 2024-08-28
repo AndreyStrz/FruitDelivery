@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "maryna2_one_lime_bright_green_color_white_background_481c81ff-fe48-4e73-9302-a289ce419d9f.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "maryna2_one_lime_bright_green_color_white_background_481c81ff-fe48-4e73-9302-a289ce419d9f@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "maryna2_one_lime_bright_green_color_white_background_481c81ff-fe48-4e73-9302-a289ce419d9f@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

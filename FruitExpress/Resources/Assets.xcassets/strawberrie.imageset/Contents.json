@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "maryna2_one_strawberrie_bright_red_color_white_background_d4a077e6-0565-4f20-9992-2f9ccc04d369.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "maryna2_one_strawberrie_bright_red_color_white_background_d4a077e6-0565-4f20-9992-2f9ccc04d369@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "maryna2_one_strawberrie_bright_red_color_white_background_d4a077e6-0565-4f20-9992-2f9ccc04d369@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

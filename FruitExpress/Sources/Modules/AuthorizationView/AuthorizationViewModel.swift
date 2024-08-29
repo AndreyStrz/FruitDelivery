@@ -52,6 +52,10 @@ extension AuthorizationViewModel {
     func haveNotAccountClicked() {
         router.haveNotAccountClicked()
     }
+    
+    func anonymousLoginButtonClicked() {
+        router.anonymousLoginButtonClicked()
+    }
 }
 
 extension AuthorizationViewModel: AuthViewModelProtocol {

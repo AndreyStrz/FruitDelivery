@@ -22,6 +22,7 @@ extension AuthorizationView {
 protocol AuthorizationRouterInput {
     func signInButtonClicked()
     func haveNotAccountClicked()
+    func anonymousLoginButtonClicked()
 }
 
 @MainActor
@@ -39,5 +40,9 @@ final class AuthorizationRouter: AuthorizationRouterInput {
     func haveNotAccountClicked() {
         let rootViewController: UIHostingController<RegistrationScreen> = RegistrationScreen.buildModule()
         viewController?.navigationController?.pushViewController(rootViewController, animated: true)
+    }
+    
+    func anonymousLoginButtonClicked() {
+        RootViewController.shared.moduleInput.finishAuthorizationFlow()
     }
 }

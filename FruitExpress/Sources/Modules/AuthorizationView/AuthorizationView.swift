@@ -31,6 +31,10 @@ struct AuthorizationView: View {
                     Alert(title: Text("SOMETHING WENT WRONG."), message: Text("AUTHENTICATION ERROR. PLEASE CHECK YOUR CREDENTIALS AND TRY AGAIN."), dismissButton: .default(Text("OK")))
                 }
                 .padding(.top, 8)
+                Button("ANONYMUS LOGIN") {
+                    viewModel.anonymousLoginButtonClicked()
+                }
+                .foregroundColor(.white)
                 Spacer()
                 Button("YOU DON'T HAVE AN ACCOUNT YET? \n SIGN UP NOW?") {
                     viewModel.haveNotAccountClicked()

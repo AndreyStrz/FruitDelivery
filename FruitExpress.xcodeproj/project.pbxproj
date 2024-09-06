@@ -40,6 +40,7 @@
 		367C8ECB2C779222000F29D3 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367C8ECA2C779221000F29D3 /* SecureTextField.swift */; };
 		367C8ECD2C7794F5000F29D3 /* AccountModuleAssembler .swift in Sources */ = {isa = PBXBuildFile; fileRef = 367C8ECC2C7794F5000F29D3 /* AccountModuleAssembler .swift */; };
 		367DFA802C7F4A5400C01B92 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 367DFA7F2C7F4A5400C01B92 /* GoogleService-Info.plist */; };
+		3684215F2C8AEE3E001D0976 /* AppsFlyerLib-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 3684215E2C8AEE3E001D0976 /* AppsFlyerLib-Dynamic */; };
 		368AD0B92C7348F400316413 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368AD0B82C7348F300316413 /* CounterView.swift */; };
 		368AD0BC2C73879800316413 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368AD0BB2C73879800316413 /* FavoritesViewModel.swift */; };
 		368AD0BE2C73879F00316413 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368AD0BD2C73879F00316413 /* FavoritesViewController.swift */; };
@@ -258,6 +259,7 @@
 				36CB84672C75ECEF004C3CD1 /* RealmSwift in Frameworks */,
 				C1A978A72C7774AF00D8DA34 /* FirebaseFirestore in Frameworks */,
 				C1A9789F2C77738D00D8DA34 /* FirebaseAuth in Frameworks */,
+				3684215F2C8AEE3E001D0976 /* AppsFlyerLib-Dynamic in Frameworks */,
 				C1A978A12C77738D00D8DA34 /* FirebaseStorage in Frameworks */,
 				A5F7960B5A33B36198F17D62 /* Pods_FruitExpress.framework in Frameworks */,
 			);
@@ -762,6 +764,7 @@
 				C1A9789E2C77738D00D8DA34 /* FirebaseAuth */,
 				C1A978A02C77738D00D8DA34 /* FirebaseStorage */,
 				C1A978A62C7774AF00D8DA34 /* FirebaseFirestore */,
+				3684215E2C8AEE3E001D0976 /* AppsFlyerLib-Dynamic */,
 			);
 			productName = SweetBonanza1;
 			productReference = 3604EAC02C6BB70300B31598 /* FruitExpress.app */;
@@ -841,6 +844,7 @@
 			packageReferences = (
 				36CB84652C75ECEF004C3CD1 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				C1A9789D2C77738D00D8DA34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3684215D2C8AEE3E001D0976 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Dynamic" */,
 			);
 			productRefGroup = 3604EAC12C6BB70300B31598 /* Products */;
 			projectDirPath = "";
@@ -1435,6 +1439,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3684215D2C8AEE3E001D0976 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Dynamic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Dynamic.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.15.2;
+			};
+		};
 		36CB84652C75ECEF004C3CD1 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
@@ -1454,6 +1466,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3684215E2C8AEE3E001D0976 /* AppsFlyerLib-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3684215D2C8AEE3E001D0976 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Dynamic" */;
+			productName = "AppsFlyerLib-Dynamic";
+		};
 		36CB84662C75ECEF004C3CD1 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 36CB84652C75ECEF004C3CD1 /* XCRemoteSwiftPackageReference "realm-swift" */;

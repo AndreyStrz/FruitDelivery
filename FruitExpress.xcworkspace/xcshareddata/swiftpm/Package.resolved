@@ -19,6 +19,15 @@
       }
     },
     {
+      "identity" : "appsflyerframework-dynamic",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Dynamic.git",
+      "state" : {
+        "revision" : "3e977098a4c3caa0697b39544ccad116cf1d5707",
+        "version" : "6.15.2"
+      }
+    },
+    {
       "identity" : "firebase-ios-sdk",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/firebase-ios-sdk",

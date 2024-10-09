@@ -92,6 +92,8 @@ class RootViewController: UIViewController, Containerable {
     
     static let shared = RootViewController()
     
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     private init() {
         super.init(nibName: nil, bundle: nil)
     }
@@ -99,6 +101,13 @@ class RootViewController: UIViewController, Containerable {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        AppDelegate.orientationLock = .portrait
+        UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
+        UINavigationController.attemptRotationToDeviceOrientation()
     }
     
     override func viewDidLoad() {

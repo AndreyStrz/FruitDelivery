@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyBj5EA2T7Ix8CzU2EpS_LF9Bh7_UmXgiTU</string>
+	<string>AIzaSyDH-723rc1VtcPZG8Vm2oLkkx4uYiCMezo</string>
 	<key>GCM_SENDER_ID</key>
-	<string>952405315046</string>
+	<string>990056066042</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.FruitExpresss</string>
 	<key>PROJECT_ID</key>
-	<string>fruitdelivery-935f0</string>
+	<string>fruit-express</string>
 	<key>STORAGE_BUCKET</key>
-	<string>fruitdelivery-935f0.appspot.com</string>
+	<string>fruit-express.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:952405315046:ios:44e3b67c880d279f2f1a27</string>
+	<string>1:990056066042:ios:d106a115b19e1e2f8d9243</string>
 </dict>
 </plist>

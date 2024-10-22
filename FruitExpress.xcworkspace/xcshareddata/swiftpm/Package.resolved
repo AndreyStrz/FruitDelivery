@@ -1,4 +1,5 @@
 {
+  "originHash" : "3c569ec3554a64b390924cef610c2d1b76f81b228872957a81822316f820dd8c",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -118,6 +119,15 @@
       }
     },
     {
+      "identity" : "pushexpress-swift-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pushexpress/pushexpress-swift-sdk",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e3642f1b37b4e2729af501c4578d9f3ccf8ddd81"
+      }
+    },
+    {
       "identity" : "realm-core",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/realm/realm-core.git",
@@ -145,5 +155,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

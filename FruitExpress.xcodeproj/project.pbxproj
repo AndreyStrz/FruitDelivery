@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -117,6 +117,9 @@
 		C1E756E52C720E5F0090A0B2 /* ConditionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E756E42C720E5F0090A0B2 /* ConditionModifier.swift */; };
 		C1E756E92C7215310090A0B2 /* MainTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E756E82C7215310090A0B2 /* MainTextField.swift */; };
 		C1E756EE2C722AFA0090A0B2 /* PagingCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E756ED2C722AFA0090A0B2 /* PagingCollectionViewLayout.swift */; };
+		D549F2FD2CC79FCD00004DFF /* notificationsvc.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D549F2F62CC79FCD00004DFF /* notificationsvc.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D5B502C12CC7A052005ACA9F /* SdkPushExpress in Frameworks */ = {isa = PBXBuildFile; productRef = D5B502C02CC7A052005ACA9F /* SdkPushExpress */; };
+		D5B502C32CC7A1E5005ACA9F /* SdkPushExpress in Frameworks */ = {isa = PBXBuildFile; productRef = D5B502C22CC7A1E5005ACA9F /* SdkPushExpress */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +137,13 @@
 			remoteGlobalIDString = 3604EABF2C6BB70300B31598;
 			remoteInfo = SweetBonanza1;
 		};
+		D549F2FB2CC79FCD00004DFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3604EAB82C6BB70300B31598 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D549F2F52CC79FCD00004DFF;
+			remoteInfo = notificationsvc;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -146,6 +156,17 @@
 				36CB84682C75F8DF004C3CD1 /* RealmSwift in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D549F2F12CC79DC800004DFF /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D549F2FD2CC79FCD00004DFF /* notificationsvc.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -260,8 +281,24 @@
 		C1E756E42C720E5F0090A0B2 /* ConditionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionModifier.swift; sourceTree = "<group>"; };
 		C1E756E82C7215310090A0B2 /* MainTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextField.swift; sourceTree = "<group>"; };
 		C1E756ED2C722AFA0090A0B2 /* PagingCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingCollectionViewLayout.swift; sourceTree = "<group>"; };
+		D549F2E02CC7993500004DFF /* FruitExpress.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FruitExpress.entitlements; sourceTree = "<group>"; };
+		D549F2F62CC79FCD00004DFF /* notificationsvc.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = notificationsvc.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6CAD3D80EA6BAC54E9A3353 /* Pods-FruitExpress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitExpress.debug.xcconfig"; path = "Target Support Files/Pods-FruitExpress/Pods-FruitExpress.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D549F2FE2CC79FCD00004DFF /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D549F2F52CC79FCD00004DFF /* notificationsvc */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D549F2F72CC79FCD00004DFF /* notificationsvc */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (D549F2FE2CC79FCD00004DFF /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = notificationsvc; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3604EABD2C6BB70300B31598 /* Frameworks */ = {
@@ -269,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36CB84672C75ECEF004C3CD1 /* RealmSwift in Frameworks */,
+				D5B502C12CC7A052005ACA9F /* SdkPushExpress in Frameworks */,
 				360C62F32CB6C0B7007AF01A /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				365AE26C2C9C03B2003ADE8A /* FlagsmithClient in Frameworks */,
 				360C62FB2CB6C0B7007AF01A /* FirebaseFirestoreCombine-Community in Frameworks */,
@@ -297,6 +335,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D549F2F32CC79FCD00004DFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B502C32CC7A1E5005ACA9F /* SdkPushExpress in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -304,6 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				3604EAC22C6BB70300B31598 /* FruitExpress */,
+				D549F2F72CC79FCD00004DFF /* notificationsvc */,
 				3604EAC12C6BB70300B31598 /* Products */,
 				C1A978A52C7774AF00D8DA34 /* Frameworks */,
 				C97753DC85EBCB0DF9900FFA /* Pods */,
@@ -316,6 +363,7 @@
 				3604EAC02C6BB70300B31598 /* FruitExpress.app */,
 				3604EAD62C6BB70700B31598 /* FruitExpressTests.xctest */,
 				3604EAE02C6BB70700B31598 /* FruitExpressUITests.xctest */,
+				D549F2F62CC79FCD00004DFF /* notificationsvc.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -323,6 +371,7 @@
 		3604EAC22C6BB70300B31598 /* FruitExpress */ = {
 			isa = PBXGroup;
 			children = (
+				D549F2E02CC7993500004DFF /* FruitExpress.entitlements */,
 				3604EAF32C6BB76600B31598 /* Resources */,
 				3604EAF42C6BB8A300B31598 /* Sources */,
 			);
@@ -773,10 +822,12 @@
 				3604EABE2C6BB70300B31598 /* Resources */,
 				36CB84692C75F8DF004C3CD1 /* Embed Frameworks */,
 				B91E08AA54AC1905F3F816C6 /* [CP] Embed Pods Frameworks */,
+				D549F2F12CC79DC800004DFF /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D549F2FC2CC79FCD00004DFF /* PBXTargetDependency */,
 			);
 			name = FruitExpress;
 			packageProductDependencies = (
@@ -789,6 +840,7 @@
 				360C62F62CB6C0B7007AF01A /* FirebaseCore */,
 				360C62F82CB6C0B7007AF01A /* FirebaseFirestore */,
 				360C62FA2CB6C0B7007AF01A /* FirebaseFirestoreCombine-Community */,
+				D5B502C02CC7A052005ACA9F /* SdkPushExpress */,
 			);
 			productName = SweetBonanza1;
 			productReference = 3604EAC02C6BB70300B31598 /* FruitExpress.app */;
@@ -833,6 +885,29 @@
 			productReference = 3604EAE02C6BB70700B31598 /* FruitExpressUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D549F2F52CC79FCD00004DFF /* notificationsvc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D549F2FF2CC79FCD00004DFF /* Build configuration list for PBXNativeTarget "notificationsvc" */;
+			buildPhases = (
+				D549F2F22CC79FCD00004DFF /* Sources */,
+				D549F2F32CC79FCD00004DFF /* Frameworks */,
+				D549F2F42CC79FCD00004DFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D549F2F72CC79FCD00004DFF /* notificationsvc */,
+			);
+			name = notificationsvc;
+			packageProductDependencies = (
+				D5B502C22CC7A1E5005ACA9F /* SdkPushExpress */,
+			);
+			productName = notificationsvc;
+			productReference = D549F2F62CC79FCD00004DFF /* notificationsvc.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -840,7 +915,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1520;
+				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					3604EABF2C6BB70300B31598 = {
@@ -853,6 +928,9 @@
 					3604EADF2C6BB70700B31598 = {
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = 3604EABF2C6BB70300B31598;
+					};
+					D549F2F52CC79FCD00004DFF = {
+						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
@@ -869,6 +947,7 @@
 				36CB84652C75ECEF004C3CD1 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				365AE26A2C9C03B2003ADE8A /* XCRemoteSwiftPackageReference "flagsmith-ios-client" */,
 				360C62ED2CB6C0B7007AF01A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D5B502BF2CC7A052005ACA9F /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */,
 			);
 			productRefGroup = 3604EAC12C6BB70300B31598 /* Products */;
 			projectDirPath = "";
@@ -877,6 +956,7 @@
 				3604EABF2C6BB70300B31598 /* FruitExpress */,
 				3604EAD52C6BB70700B31598 /* FruitExpressTests */,
 				3604EADF2C6BB70700B31598 /* FruitExpressUITests */,
+				D549F2F52CC79FCD00004DFF /* notificationsvc */,
 			);
 		};
 /* End PBXProject section */
@@ -902,6 +982,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3604EADE2C6BB70700B31598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D549F2F42CC79FCD00004DFF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1127,6 +1214,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D549F2F22CC79FCD00004DFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1139,6 +1233,11 @@
 			isa = PBXTargetDependency;
 			target = 3604EABF2C6BB70300B31598 /* FruitExpress */;
 			targetProxy = 3604EAE12C6BB70700B31598 /* PBXContainerItemProxy */;
+		};
+		D549F2FC2CC79FCD00004DFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D549F2F52CC79FCD00004DFF /* notificationsvc */;
+			targetProxy = D549F2FB2CC79FCD00004DFF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1279,6 +1378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FruitExpress/FruitExpress.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1317,6 +1417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FruitExpress/FruitExpress.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1353,7 +1454,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C0A11F24070FD02591A665B3 /* Pods-FruitExpressTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1374,7 +1474,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4B32888D61CB74FD3F554728 /* Pods-FruitExpressTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1395,7 +1494,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A20A46BC1595DBFB0024E6AC /* Pods-FruitExpress-FruitExpressUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y2996WT57A;
@@ -1414,7 +1512,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A8AF26F3F471730E133019B /* Pods-FruitExpress-FruitExpressUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y2996WT57A;
@@ -1426,6 +1523,68 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = FruitExpress;
+			};
+			name = Release;
+		};
+		D549F3002CC79FCD00004DFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = notificationsvc/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = notificationsvc;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FruitExpresss.notificationsvc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D549F3012CC79FCD00004DFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = notificationsvc/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = notificationsvc;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FruitExpresss.notificationsvc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -1468,6 +1627,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		D549F2FF2CC79FCD00004DFF /* Build configuration list for PBXNativeTarget "notificationsvc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D549F3002CC79FCD00004DFF /* Debug */,
+				D549F3012CC79FCD00004DFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -1492,6 +1660,14 @@
 			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
 				branch = master;
+				kind = branch;
+			};
+		};
+		D5B502BF2CC7A052005ACA9F /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pushexpress/pushexpress-swift-sdk";
+			requirement = {
+				branch = main;
 				kind = branch;
 			};
 		};
@@ -1542,6 +1718,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 36CB84652C75ECEF004C3CD1 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		D5B502C02CC7A052005ACA9F /* SdkPushExpress */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5B502BF2CC7A052005ACA9F /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */;
+			productName = SdkPushExpress;
+		};
+		D5B502C22CC7A1E5005ACA9F /* SdkPushExpress */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5B502BF2CC7A052005ACA9F /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */;
+			productName = SdkPushExpress;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
